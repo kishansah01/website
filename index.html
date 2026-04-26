@@ -5,16 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kishan Sah | Portfolio</title>
 
-<!-- CSS -->
-<link rel="stylesheet" href="style.css">
-
-<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
     <h2 class="logo">Kishan<span>.</span></h2>
 
@@ -26,18 +24,17 @@
         <a href="#contact">Contact</a>
     </nav>
 
-    <div class="header-right">
+    <div class="right">
         <button id="theme-toggle">🌙</button>
         <i class="fas fa-bars" id="menu"></i>
     </div>
 </header>
 
-<!-- HOME -->
 <section id="home" class="home">
     <div class="content">
         <h1>Hi, I'm <span>Kishan Sah</span></h1>
         <h3 id="typing"></h3>
-        <p>I turn business ideas into digital solutions.</p>
+        <p>I build modern business solutions using technology.</p>
 
         <div class="buttons">
             <a href="#portfolio">Projects</a>
@@ -46,13 +43,11 @@
     </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
     <h2>About Me</h2>
-    <p>BBA student passionate about marketing, business strategy and technology.</p>
+    <p>BBA student focused on business, marketing & digital tools.</p>
 </section>
 
-<!-- SKILLS -->
 <section id="skills">
     <h2>Skills</h2>
     <div class="cards">
@@ -62,34 +57,31 @@
     </div>
 </section>
 
-<!-- PROJECTS -->
 <section id="portfolio">
     <h2>Projects</h2>
     <div class="cards">
-        <div class="card"><h3>Marketing Plan</h3></div>
-        <div class="card"><h3>Case Study</h3></div>
-        <div class="card"><h3>Portfolio Website</h3></div>
+        <div class="card project"><h3>Marketing Plan</h3></div>
+        <div class="card project"><h3>Case Study</h3></div>
+        <div class="card project"><h3>Portfolio Website</h3></div>
     </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
     <h2>Contact</h2>
     <form onsubmit="sendMessage(event)">
         <input type="text" placeholder="Name" required>
         <input type="email" placeholder="Email" required>
         <textarea placeholder="Message"></textarea>
-        <button type="submit">Send</button>
+        <button>Send</button>
     </form>
     <p id="msg"></p>
 </section>
 
-<!-- FOOTER -->
 <footer>
     <p>© 2026 Kishan Sah</p>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 
 </body>
 </html>
