@@ -14,28 +14,61 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    background:rgba(0,0,0,0.6);
-    backdrop-filter:blur(10px);
+    background:rgba(15,23,42,0.9);
+    backdrop-filter:blur(12px);
+    box-shadow:0 4px 20px rgba(0,0,0,0.3);
+    z-index:1000;
 }
 
+.logo{
+    font-size:22px;
+    font-weight:600;
+}
 .logo span{color:#38bdf8;}
 
+/* NAV */
 nav{
     display:flex;
-    gap:20px;
+    gap:25px;
 }
 
 nav a{
-    color:white;
+    position:relative;
     text-decoration:none;
+    color:#e2e8f0;
+    font-weight:500;
 }
 
+/* UNDERLINE ANIMATION */
+nav a::after{
+    content:"";
+    position:absolute;
+    width:0%;
+    height:2px;
+    left:0;
+    bottom:-5px;
+    background:#38bdf8;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+/* RIGHT SIDE */
 .right{
     display:flex;
     gap:15px;
 }
 
-#menu{display:none;cursor:pointer;}
+#menu{
+    display:none;
+    cursor:pointer;
+}
 
 /* HOME */
 .home{
@@ -51,12 +84,12 @@ nav a{
 
 /* BUTTONS */
 .buttons a{
-    display:inline-block;
     margin:10px;
     padding:10px 20px;
     border-radius:25px;
     background:#38bdf8;
     color:black;
+    text-decoration:none;
 }
 
 .buttons .outline{
@@ -109,15 +142,19 @@ footer{
 
     nav{
         position:absolute;
-        top:60px;
+        top:70px;
         right:-100%;
         flex-direction:column;
-        background:#111;
+        background:#020617;
+        width:220px;
         padding:20px;
+        border-radius:10px;
         transition:.3s;
     }
 
-    nav.active{right:0;}
+    nav.active{
+        right:20px;
+    }
 
     .home{
         flex-direction:column;
